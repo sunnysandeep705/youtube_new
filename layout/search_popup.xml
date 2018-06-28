@@ -4,25 +4,42 @@
     android:id="@+id/searchbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
     android:background="#FFF"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/sendtoemail"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/color_gradient"
-        android:text="send to email"
-        android:textColor="#fff" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/color_gradient"
-        android:text="send to mobile"
-        android:textColor="#fff" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            app:srcCompat="@drawable/back_icon" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toRightOf="@id/back"
+
+            android:hint="Name,Email,..."
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/searchicon" />
+
+
+    </RelativeLayout>
+
 </LinearLayout>

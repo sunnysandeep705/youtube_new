@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <LinearLayout
+        android:id="@+id/animview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#a6e1aa"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserract"
+        android:text="Change Price Here"
+        android:textColor="#455A64"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/transparentbackgrouond"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/change"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corners2">
+
+        <EditText
+            android:id="@+id/changepricetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:focusable="auto"
+
+            android:fontFamily="@font/montserract"
+            android:hint="Price/kilo(example 500)"
+
+            android:inputType="number"
+            android:textColor="#455A64"
+            android:textColorHint="#455A64"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transparentbackgrouond"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/montserract"
+        android:text="Change "
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scrollingtext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="marquee"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/montserract"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="          Last changed Price                     "
+            android:textAllCaps="false"
+            android:textColor="#455A64"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lastchangedprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/rupees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:fontFamily="@font/montserract"
+                android:text=" rupees/kilo"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

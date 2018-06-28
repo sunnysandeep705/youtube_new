@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@id/one"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/emails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="suresh@email.com"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view0"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/two"
+        android:layout_below="@id/view0"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="suresh"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/viewtwo"
+        android:layout_below="@id/two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/three"
+        android:layout_below="@+id/viewtwo"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Lenght"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Length"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lenghts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="25mts"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewthree"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/three"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/viewthree"
+        android:id="@+id/four"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sizescover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Cover size"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sizescovers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="25X25"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewfour"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/four"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/five"
+        android:layout_below="@+id/viewfour"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="28/12/18"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewfive"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/five"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/six"
+        android:layout_below="@+id/viewfive"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Phone number"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phonenumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="9666615555"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewsix"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/six"
+        android:background="#DCDCDC" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewsix"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewsix"
+        android:layout_gravity="center_horizontal"
+        android:text="Status"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_gradienttwotwo"
+            android:checked="true"
+            android:text="Not finished" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_gradienttwotwo"
+            android:text="Finished" />
+    </LinearLayout>
+
+</RelativeLayout>

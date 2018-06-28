@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_weight="1"
         android:orientation="vertical"
         android:padding="5dp">
 
@@ -21,6 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Do you want to change price to"
+            android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -28,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
@@ -35,13 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:textSize="18sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -63,6 +68,7 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:text="YES"
+                android:textColor="#fff"
                 android:textSize="17sp" />
         </LinearLayout>
 
@@ -85,6 +91,7 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:text=" NO"
+                android:textColor="#fff"
                 android:textSize="17sp" />
         </LinearLayout>
 
