@@ -2,62 +2,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="70dp">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="60dp">
 
         <ImageView
             android:id="@+id/menu"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-
-            android:layout_alignParentBottom="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
             android:layout_margin="5dp"
             android:scaleType="center"
-            android:src="@drawable/menubars"
-            android:tint="#FFF" />
+            app:srcCompat="@drawable/menubars" />
+
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/menu"
-            android:layout_toLeftOf="@id/serach_icons"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:id="@+id/linearLayout">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/toolbar_titles"
+                android:id="@+id/Admin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
-                android:layout_margin="5dp"
-                android:text="Home"
-                android:textColor="#FFF"
-                android:textSize="19sp"
-                android:textStyle="bold" />
-
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserract"
+                android:gravity="center"
+                android:text="Admin"
+                android:textColor="#fff"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/serach_icons"
-            android:layout_width="40dp"
-            android:layout_height="31dp"
+            android:id="@+id/search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/linearLayout"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:layout_margin="5dp"
             android:scaleType="center"
             android:src="@drawable/search" />
-
-    </RelativeLayout>
-
-
+    </LinearLayout>
 
 </LinearLayout>

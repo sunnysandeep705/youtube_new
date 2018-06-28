@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:blurkit="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/withoutimg_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Without Images "
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/withimg_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" With Images"
+            android:textSize="24sp" />
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/oder_recycler"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/oders_viewpager"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent" />
-</RelativeLayout>
+
+    <com.wonderkiln.blurkit.BlurLayout
+        android:id="@+id/blurlayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="false"
+        android:background="#dcdcdc"
+        android:visibility="gone"
+        blurkit:blk_blurRadius="12"
+        blurkit:blk_downscaleFactor="0.12"
+        blurkit:blk_fps="60">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </com.wonderkiln.blurkit.BlurLayout>
+
+</LinearLayout>
