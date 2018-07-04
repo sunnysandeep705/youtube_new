@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout" >
+
+    <!--Below activity widgets when the transparent layout is gone -->
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_gradient"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/bottom_popup" />
+
+    </RelativeLayout>
+
+
+
+    <!--Below is the transparent layout positioned at startup -->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88666666"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:paddingLeft="20dip"
+            android:paddingTop="25dp"
+            android:scaleType="center"
+            android:src="@drawable/capture" />
+
+    </RelativeLayout>
+
+</FrameLayout>
