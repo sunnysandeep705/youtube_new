@@ -3,6 +3,7 @@
     <blacklists>
       <blacklist language="Java">
         <added pattern="android.util.Log.e(tag,msg)" />
+        <added pattern="android.support.v4.app.ActivityCompat.requestPermissions(activity,permissions,requestCode)" />
       </blacklist>
     </blacklists>
   </component>
