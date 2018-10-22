@@ -14,9 +14,13 @@
           <option name="url" value="https://github.com/sandeeprahul/MyCop/" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/sunnysandeep705/youtube_new.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="D:\sunny\project\android" />
+    <option name="cloneParentDir" value="I:\sunny\android project" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="MIGRATED" value="true" />
